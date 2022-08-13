@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Preparing the environment') {
             steps {
-                sh 'python -m pip3 install -r requirements.txt'
+                sh 'pip3 install -r requirements.txt'
             }
         }
         stage('Code Quality') {
